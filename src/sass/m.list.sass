@@ -1,0 +1,49 @@
+@import "./modules/_options"
+/* 文章列表 */
+.wenzhangliebiao
+  li
+    position: relative
+    margin-bottom: 30px
+    padding: 9px 31px 9px 0
+    border-width: 1px
+    border-style: solid
+    border-color: #ccc
+    &:hover
+      border-color: $bluecolor2
+      div
+        left: 0
+        background-color: $bluecolor2
+      a, p
+        color: #fff
+  time, b, span
+    display: block
+  time
+    width: 107px
+    padding-top: 17px
+    border-right: 1px solid #999
+    text-align: center
+  b
+    margin-bottom: 10px
+    font-size: 24px
+    font-weight: normal
+    color: $bluecolor
+  span
+    padding-bottom: 16px
+    font-size: 18px
+    color: #7c7b7c
+  div
+    position: absolute
+    z-index: 1
+    padding: 9px 31px
+    top: 0
+    bottom: 0
+    right: 0
+    left: 107px
+  a
+    font-size: 20px
+    color: $bluecolor
+  p
+    margin-top: 14px
+    color: #6f6f6f
+    text-indent: 2em
+    line-height: 22px

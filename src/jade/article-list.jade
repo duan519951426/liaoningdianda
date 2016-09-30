@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        include ./modules/head.jade
+        script(src='../app/app.list.js' data-type="webpack")
+        title 文章列表
+    body
+        include ./modules/header.jade
+        div.layout.layout-top.clearfix
+            include ./modules/layout.jade
+            div.layout-right
+                ul.wenzhangliebiao
+                    li
+                        time
+                            b 07-20
+                            span 2016
+                        div
+                            a(href='./article-detail.html') 关于学校新版门户主页正式上线运行的通知
+                            p 为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                    li
+                        time
+                            b 07-20
+                            span 2016
+                        div
+                            a(href='#') 关于学校新版门户主页正式上线运行的通知
+                            p 为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                    li
+                        time
+                            b 07-20
+                            span 2016
+                        div
+                            a(href='#') 关于学校新版门户主页正式上线运行的通知
+                            p 为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                    li
+                        time
+                            b 07-20
+                            span 2016
+                        div
+                            a(href='#') 关于学校新版门户主页正式上线运行的通知
+                            p 为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                div.pagin
+                    a(href='#') &lt;&lt;上一页
+                    span.pagin-shu
+                        b |
+                        b &lt;
+                    a(href='#') [1]
+                    a.pagin-index(href='#') [2]
+                    a(href='#') [3]
+                    a(href='#') [4]
+                    a(href='#') [5]
+                    span.pagin-shu
+                        b &gt;
+                        b |
+                    a(href='#') 下一页&gt;&gt;
+        include ./modules/footer.jade

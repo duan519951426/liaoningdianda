@@ -1,0 +1,351 @@
+@import "./modules/_options"
+/* 首页其他css */
+.layout-index-box1
+  float: left
+  width: 770px
+  margin-right: 30px
+.layout-index-box2
+  float: right
+  width: 400px
+.float-l
+  float: left
+/* 图片广告 */
+.advertisement
+  display: block
+  width: 100%
+  img
+    width: 100%
+/* 新闻动态 */
+.news-banner
+  width: 378px
+  height: 210px
+.news-banner-image
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+.news-banner-image, .news-banner-imageBox
+  height: 100%
+.news-banner-imageBox
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  a
+    float: left
+    display: block
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center center
+.news-banner-clickBox
+  position: relative
+  z-index: 2
+  margin: -25px auto 0
+  cursor: default
+  text-align: right
+  li
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    width: 20px
+    height: 20px
+    margin: 0 2px
+    font-size: 12px
+    line-height: 20px
+    text-align: center
+    color: #fff
+    background-color: #000\9
+    background-color: rgba(0, 0, 0, .7)
+  li.thisIndex
+    color: #f6c65e
+.news-list
+  width: 377px
+  margin-left: 12px
+  font-size: 14px
+  list-style-image: url('#{$imgurl}list1.png')
+  list-style-position: inside
+  li
+    margin-bottom: 12px
+    overflow: hidden
+    &:last-child
+      margin-bottom: 0
+  a
+    color: #4c4c4c
+    &:hover
+      color: $bluecolor
+  time
+    float: right
+    color: #8c8c8c
+/* 党政工作 */
+.partyWork
+  a
+    float: left
+    display: block
+    width: 190px
+    padding: 6px 0
+    font-size: 14px
+    border: 1px solid $bluecolor
+    color: $bluecolor
+    &:hover
+      color: #fff
+      background-color: $bluecolor
+      text-decoration: none
+  span
+    vertical-align: 10px
+.partyWork-icon
+  margin: 0 20px 0 39px
+.partyWork-r
+  margin-right: 16px
+.partyWork-b
+  margin-bottom: 24px
+/* 大新闻 */
+.bingNews
+  margin-top: 18px
+/* 通知公告 */
+.notice
+  li
+    margin-bottom: 8px
+    padding: 10px 0
+    border: 1px solid #dadada
+    &:last-child
+      margin-bottom: 0
+  time
+    float: left
+    display: block
+    width: 109px
+    height: 59px
+    margin-right: 14px
+    border-right: 1px solid #999
+    text-align: center
+  b, span
+    display: block
+  b
+    font-size: 24px
+    font-weight: normal
+    color: $bluecolor2
+    margin-bottom: 8px
+  span
+    font-size: 14px
+    color: #7a7b7b
+  div
+    float: right
+    width: 620px
+    margin-top: -5px
+    padding-right: 18px
+  a
+    margin-top: -3px
+    font-size: 16px
+    color: $bluecolor2
+  p
+    margin-top: 6px
+    font-size: 12px
+    line-height: 18px
+    color: #707070
+    text-indent: 2em
+/* 办公导航 */
+.workingNav
+  li
+    float: left
+    *width: 80px
+  a
+    display: block
+    &:hover
+      color: $bluecolor
+      text-decoration: none
+.workingNav-icon
+  margin: 0 auto 14px
+.workingNav-text
+  width: 75px
+  font-size: 18px
+  text-align: center
+  color: #494950
+.workingNav-r
+  margin-right: 80px
+.workingNav-b
+  margin-bottom: 22px
+/* 学历教育 */
+.xuelijiaoyu-image
+  display: block
+  width: 158px
+  height: 177px
+  margin-right: 40px
+  img
+    width: 100%
+    height: 100%
+.xuelijiaoyu-list
+  h5
+    margin-bottom: 8px
+    font-size: 20px
+    font-weight: normal
+    color: #333
+  ul
+    width: 180px
+    list-style-type: circle
+    list-style-position: inside
+    font-size: 14px
+    color: $bluecolor
+  li
+    margin-bottom: 6px
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      list-style-type: disc
+  a
+    color: #817b79
+    &:hover
+      color: $bluecolor
+/* 继续教育 */
+.jixujiaoyu
+  a, b, img
+    float: left
+  a
+    display: block
+    width: 191px
+    height: 49px
+    border: 1px solid $bluecolor2
+    overflow: hidden
+  b
+    display: table
+    width: 57px
+    height: 100%
+    font-size: 14px
+    font-weight: normal
+    text-align: center
+    background-color: #6eaebd
+    color: #fff
+  span
+    display: table-cell
+    vertical-align: middle
+  img
+    display: block
+    width: 134px
+    height: 100%
+.jixujiaoyu-r
+  margin-right: 5px
+.jixujiaoyu-b
+  margin-bottom: 11px
+/* 非学历教育 */
+.feixuelijiaoyu
+  padding: 9px 16px
+  border: 1px solid #ccc
+  h5
+    margin-bottom: 25px
+    font-size: 18px
+    font-weight: normal
+    text-align: center
+    color: #333
+  li
+    float: left
+    margin: 0 14px
+    *width: 88px
+  a
+    display: block
+    &:hover
+      color: $bluecolor
+      text-decoration: none
+.feixuelijiaoyu-image
+  width: 88px
+  height: 88px
+  margin: 0 auto 12px
+  img
+    width: 100%
+    height: 100%
+.feixuelijiaoyu-text
+  font-size: 14px
+  text-align: center
+  color: #666
+.feixuelijiaoyu-m
+  margin-left: -1px
+/* 技能培训 */
+.jinengpeixun img
+  border: 1px solid $bluecolor2
+.jinengpeixun-b
+  margin-bottom: 20px
+/* 学海泛舟 */
+.videobox
+  position: relative
+  width: 385px
+  height: 246px
+  img
+    display: block
+    width: 100%
+    height: 100%
+.videoCtrl //, .video-error
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 1
+  opacity: 0
+  -webkit-transition: opacity .2s
+  transition: opacity .2s
+  &:hover
+    opacity: 1
+.videoPlay
+  display: block
+  width: 144px
+  height: 43px
+  background-image: url('#{$imgurl}play#{$red}.png')
+  margin: 162px auto 0
+  cursor: pointer
+//
+  .video-error
+    z-index: 2
+    background-image: url('#{$imgurl}banbendi.jpg')
+.videoList
+  width: 340px
+  padding-top: 24px
+  margin-left: 29px
+  a
+    float: left
+    display: block
+    width: 148px
+    padding: 14px 0
+    border-width: 1px
+    border-style: solid
+    border-color: #ccc
+    font-size: 18px
+    text-align: center
+    color: #333
+    &:hover
+      text-decoration: none
+      border-color: $bluecolor
+      background-color: $bluecolor
+      color: #fff
+.videoList-r
+  margin-right: 38px
+.videoList-b
+  margin-bottom: 24px
+/* 科学研究 */
+.kexueyanjiu-t
+  margin-bottom: 11px
+.kexueyanjiu-b
+  margin-bottom: 25px
+/* 友情链接 */
+.friendsHref
+  font-size: 0
+  select
+    margin-left: 16px
+    &:first-child
+      margin-left: 0
+.friendsHref-select
+  width: 175px
+  height: 30px
+  font-size: 16px
+/* 下载 */
+.download
+  font-weight: normal
+  font-size: 0
+  i, a
+    margin-right: 10px
+  i
+    vertical-align: -9px
+  a
+    font-size: 16px
+    color: $bluecolor2
+  span
+    font-size: 12px
+    color: #666
+.download-r
+  margin-right: 22px

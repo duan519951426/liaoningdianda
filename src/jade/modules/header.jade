@@ -1,0 +1,53 @@
+include ./logo.jade
+// 导航栏
+section.navbox
+    div.navbox-b.clearfix
+        nav.nav.clearfix
+            a.nav1(href='./index.html') 首页
+            div
+                b 学校概况
+                div.nav-second
+                    a(href='#') 学校简介
+                    a(href='#') 联系我们
+            div
+                b 部门机构
+                div.nav-second
+                    a(href='#') 部门机构简介
+                    a(href='#') 党群部门
+                    a(href='#') 行政管理及服务
+                    a(href='#') 教学科研部门
+                    a(href='#') 教学管理及服务
+                    a(href='#') 办学实体部门
+            div
+                b 直属办学
+                div.nav-second
+                    a(href='./article-hrefs.html') 直属办学简介
+                    a(href='#') 直属办学单位
+            div
+                b 系统办学
+                div.nav-second
+                    a(href='#') 系统办学简介
+                    a(href='#') 系统办学团队
+                    a(href='#') 系统办学单位
+            div
+                b 合作联盟
+                div.nav-second
+                    a(href='#') 合作联盟简介
+                    a(href='#') 合作联盟项目
+            div
+                b 国际交流
+                div.nav-second
+                    a(href='#') 国际交流简介
+                    a(href='#') 国际交流项目
+            div
+                b 成果展示
+                div.nav-second
+                    a(href='#') 成果展示简介
+                    a(href='#') 直属办学成果
+                    a(href='#') 系统办学成果
+                    a(href='#') 装备学院成果
+        div.navbox-login#navbox-login 立即登录
+        form.login#navbox-form
+            input.login-input(type='text' placeholder='身份证')
+            input.login-input(type='password' placeholder='密码')
+            input.login-btn(type='submit' value='立即登录')

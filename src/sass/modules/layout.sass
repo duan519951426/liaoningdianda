@@ -1,0 +1,63 @@
+@import "./_options"
+/* 文章页布局 */
+.layout-top
+  margin-top: 50px
+.layout-left, .layout-right
+  float: left
+.layout-left
+  padding: 10px 21px 0 0
+  width: 180px
+  margin-right: 30px
+  border-right: 1px solid #ccc
+// 办公导航
+.nav-title
+  height: 40px
+  border-bottom: 2px solid #817f7f
+  font-size: 18px
+  font-weight: normal
+  line-height: 40px
+  text-indent: 72px
+  color: #fff
+  background-color: $bluecolor
+  background-image: url('#{$imgurl}word.png')
+  background-repeat: no-repeat
+  background-position: 32px center
+.nav-title2
+  margin-top: 35px
+  padding-bottom: 10px
+  font-size: 18px
+  font-weight: normal
+  text-indent: 1px
+  border-bottom: 1px solid #ccc
+  color: $bluecolor
+// 信息分类
+.fenlei-list
+  margin: 19px 0 0
+  a
+    display: block
+    margin-bottom: 9px
+    width: 160px
+    height: 30px
+    line-height: 30px
+    text-indent: 11px
+    color: #333
+    &:hover
+      background-image: url('#{$imgurl}lb#{$red}.png')
+      background-repeat: no-repeat
+      background-position: left center
+      color: #fff
+      text-decoration: none
+// 热门排行
+.article-list
+  margin-top: 8px
+  list-style-type: disc
+  list-style-position: inside
+  li
+    margin-top: 11px
+    color: $bluecolor
+  a
+    font-size: 12px
+    color: #666
+// 右
+.layout-right
+  width: 965px

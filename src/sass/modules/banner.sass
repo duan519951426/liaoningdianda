@@ -1,0 +1,43 @@
+@import "./_options"
+/* 轮播banner */
+.banner
+  width: 1200px
+  height: 350px
+  margin: 0 auto
+.banner-image
+  position: relative
+  width: 100%
+  overflow: hidden
+.banner-image, .banner-imageBox
+  height: 100%
+.banner-imageBox
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  a
+    display: block
+    float: left
+    background-repeat: no-repeat
+    background-position: center center
+    height: 100%
+.banner-clickBox
+  position: relative
+  z-index: 2
+  margin: -30px auto 0
+  text-align: center
+  cursor: default
+  li
+    display: inline-block
+    *display: inline
+    *zoom: 1
+    width: 10px
+    height: 10px
+    margin: 0 10px
+    border-width: 1px
+    border-style: solid
+    border-color: #fff
+    border-radius: 10px
+  li.thisIndex
+    border-color: $bluecolor
+    background-color: $bluecolor

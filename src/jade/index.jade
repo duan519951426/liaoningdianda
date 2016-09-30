@@ -1,0 +1,348 @@
+doctype html
+html
+    head
+        include ./modules/head.jade
+        script(src='../app/app.index.js' data-type="webpack")
+        title 首页
+    body
+        include ./modules/header.jade
+        // 轮播banner
+        div.banner
+            div.banner-image
+                div.banner-imageBox#banner-imageBox
+            ul.banner-clickBox#banner-clickBox
+            script.
+                window._BANNER_ = [
+                    {
+                        href: "#",
+                        image: "../img/_banner/banner1.png",
+                        target: true
+                    },
+                    {
+                        href: "#",
+                        image: "../img/_banner/banner2.jpg",
+                        target: true
+                    },
+                    {
+                        href: "#",
+                        image: "../img/_banner/banner3.jpg",
+                        target: true
+                    },
+                    {
+                        href: "#",
+                        image: "../img/_banner/banner4.jpg",
+                        target: true
+                    }
+                ];
+        // 布局
+        div.layout
+            // ** 1 **
+            div.clearfix
+                // 新闻动态
+                section.layout-index-box1.clearfix
+                    h3.title.clearfix 新闻动态
+                        a(href='#') 更多...
+                    div.float-l.news-banner
+                        div.news-banner-image
+                            div.banner-imageBox#news-banner-imageBox
+                        ul.news-banner-clickBox#news-banner-clickBox
+                        script.
+                            window._NEWSBANNER_ = [
+                                {
+                                    href: "#",
+                                    image: "../img/_banner/b1.png"
+                                }
+                            ];
+                    ul.float-l.news-list
+                        li
+                            a(href='#') 我校召开2016年度课程问题库项目组...
+                            time 2016-04-13
+                        li
+                            a(href='#') 我校召开党风廉政建设专题党委(扩大)..
+                            time 2016-04-13
+                        li
+                            a(href='#') 电大信息速递(第39期）
+                            time 2016-04-13
+                        li
+                            a(href='#') 于洪区政府副区长张泰一行来我校考....
+                            time 2016-04-13
+                        li
+                            a(href='#') 辽宁电大开放教育2016年春季招生圆...
+                            time 2016-04-13
+                        li
+                            a(href='#') 辽宁电大召开开放教育“课程教学团....
+                            time 2016-04-13
+                        li
+                            a(href='#') 校长肖坤一行到新民调研招生工作
+                            time 2016-04-13
+                // 党政工作
+                section.layout-index-box2
+                    h3.title 党政工作
+                    ul.partyWork.clearfix
+                        a.partyWork-r.partyWork-b(href='#')
+                            i.partyWork-icon.syin.syin-s-0
+                            span 安排部署
+                        a.partyWork-b(href='#')
+                            i.partyWork-icon.syin.syin-s-1
+                            span 廉政之窗
+                        a.partyWork-r.partyWork-b(href='#')
+                            i.partyWork-icon.syin.syin-s-2
+                            span 事务公开
+                        a.partyWork-b(href='#')
+                            i.partyWork-icon.syin.syin-s-3
+                            span 文化点滴
+                        a.partyWork-r(href='#')
+                            i.partyWork-icon.syin.syin-s-4
+                            span 两学一做
+                        a(href='#')
+                            i.partyWork-icon.syin.syin-s-5
+                            span 学习园地
+            // ** 2 ** 广告
+            a.advertisement.bingNews(href='#')
+                img(src='../img/_delete/guanggao.jpg')
+            // ** 3 **
+            div.clearfix
+                // 通知公告
+                section.layout-index-box1
+                    h3.title.clearfix 通知公告
+                        a(href='./article-list.html') 更多...
+                    ul.notice
+                        li.clearfix
+                            time
+                                b 04-08
+                                span 2016
+                            div
+                                a(href='#') 辽宁广播电视大学关于开展国家开放大学学习网使用的评选活动的通知,辽宁广播电...
+                                p ——为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                        li.clearfix
+                            time
+                                b 04-08
+                                span 2016
+                            div
+                                a(href='#') 辽宁广播电视大学
+                                p ——为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                        li.clearfix
+                            time
+                                b 04-08
+                                span 2016
+                            div
+                                a(href='#') 辽宁广播电视大学关于开展国家开放大学学习网使用的评选活动的通知,辽宁广播电...
+                                p ——为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                        li.clearfix
+                            time
+                                b 04-08
+                                span 2016
+                            div
+                                a(href='#') 辽宁广播电视大学
+                                p ——为了更好的展现学校的精神风貌，突出办学特色，加快信息化建设。经校领导审核、结合学校各部门意见。信息化及资源建设中心设计的新版学校门户主页于2016年7月20日正式上线运行。
+                // 办公导航
+                section.layout-index-box2
+                    h3.title 办公导航
+                    ul.workingNav
+                        li.workingNav-b.workingNav-r
+                            a.workingNav-icon.syin.syin-n-0(href='#')
+                            a.workingNav-text(href='#') OA办公
+                        li.workingNav-b.workingNav-r
+                            a.workingNav-icon.syin.syin-n-1(href='#')
+                            a.workingNav-text(href='#') 电大在线
+                        li.workingNav-b
+                            a.workingNav-icon.syin.syin-n-2(href='#')
+                            a.workingNav-text(href='#') 资源中心
+                        li.workingNav-b.workingNav-r
+                            a.workingNav-icon.syin.syin-n-3(href='#')
+                            a.workingNav-text(href='#') 数字图书
+                        li.workingNav-b.workingNav-r
+                            a.workingNav-icon.syin.syin-n-4(href='#')
+                            a.workingNav-text(href='#') 教学资源
+                        li.workingNav-b
+                            a.workingNav-icon.syin.syin-n-5(href='#')
+                            a.workingNav-text(href='#') 国开学习
+                        li.workingNav-r
+                            a.workingNav-icon.syin.syin-n-6(href='#')
+                            a.workingNav-text(href='#') 人力资源
+                        li.workingNav-r
+                            a.workingNav-icon.syin.syin-n-7(href='#')
+                            a.workingNav-text(href='#') 视频直播
+                        li
+                            a.workingNav-icon.syin.syin-n-8(href='#')
+                            a.workingNav-text(href='#') 教师服务
+            // ** 4 **
+            div.clearfix
+                // 学历教育
+                section.layout-index-box1.clearfix
+                    h3.title 学历教育
+                    a.xuelijiaoyu-image.float-l(href='#')
+                        img(src='../img/_delete/a1.jpg')
+                    div.float-l.xuelijiaoyu-list
+                        h5 开放教育
+                        ul
+                            li
+                                a(href='#') 招生信息
+                            li
+                                a(href='#') 专业介绍
+                            li
+                                a(href='#') 学分银行
+                            li
+                                a(href='#') 奖学金
+                            li
+                                a(href='#') 远程接待中心
+                            li
+                                a(href='#') 学历认证查询
+                    a.xuelijiaoyu-image.float-l(href='#')
+                        img(src='../img/_delete/a2.jpg')
+                    div.float-l.xuelijiaoyu-list
+                        h5 高职教育
+                        ul
+                            li
+                                a(href='#') 招生信息
+                            li
+                                a(href='#') 专业介绍
+                            li
+                                a(href='#') 仿真实训
+                            li
+                                a(href='#') 校企合作
+                            li
+                                a(href='#') 学生风采
+                            li
+                                a(href='#') 创业就业
+
+                // 继续教育
+                section.layout-index-box2
+                    h3.title 继续教育
+                    div.jixujiaoyu.clearfix
+                        a.jixujiaoyu-r.jixujiaoyu-b(href='#')
+                            b
+                                span
+                                    |网络
+                                    br
+                                    |学院
+                            img(src='../img/_delete/b0.jpg')
+                        a.jixujiaoyu-b(href='#')
+                            b
+                                span
+                                    |农科
+                                    br
+                                    |学院
+                            img(src='../img/_delete/b1.jpg')
+                        a.jixujiaoyu-r.jixujiaoyu-b(href='#')
+                            b
+                                span
+                                    |中职
+                                    br
+                                    |教育
+                            img(src='../img/_delete/b2.jpg')
+                        a.jixujiaoyu-b(href='#')
+                            b
+                                span
+                                    |自学
+                                    br
+                                    |考试
+                            img(src='../img/_delete/b3.jpg')
+                        a.jixujiaoyu-r(href='#')
+                            b
+                                span
+                                    |研究生
+                                    br
+                                    |学院
+                            img(src='../img/_delete/b4.jpg')
+                        a(href='#')
+                            b
+                                span
+                                    |应用
+                                    br
+                                    |本科
+                            img(src='../img/_delete/b5.jpg')
+            // ** 5 **
+            div.clearfix
+                // 非学历教育
+                section.layout-index-box1.clearfix
+                    h3.title 非学历教育
+                    div.float-l.feixuelijiaoyu
+                        h5 社会教育 | SOCIAL EDUCATION
+                        ul.clearfix
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c0.jpg')
+                                a.feixuelijiaoyu-text(href='#') 老年教育
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c1.jpg')
+                                a.feixuelijiaoyu-text(href='#') 社区教育
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c2.jpg')
+                                a.feixuelijiaoyu-text(href='#') 农村教育
+                    div.float-l.feixuelijiaoyu-m.feixuelijiaoyu
+                        h5 社会培训 | SOCIAL TRAINING
+                        ul.clearfix
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c3.jpg')
+                                a.feixuelijiaoyu-text(href='#') 干部培训
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c4.jpg')
+                                a.feixuelijiaoyu-text(href='#') 党员培训
+                            li
+                                a.feixuelijiaoyu-image(href='#')
+                                    img(src='../img/_delete/c5.jpg')
+                                a.feixuelijiaoyu-text(href='#') 创业培训
+                // 技能培训
+                section.layout-index-box2
+                    h3.title 技能培训
+                    a.jinengpeixun-b.advertisement.jinengpeixun(href='#')
+                        img(src='../img/_delete/d1.jpg')
+                    a.advertisement.jinengpeixun(href='#')
+                        img(src='../img/_delete/d2.jpg')
+            // ** 6 ** 广告
+            a.advertisement.bingNews(href='#')
+                img(src='../img/_delete/guanggao2.jpg')
+            // ** 7 **
+            div.clearfix
+                // 学海泛舟
+                div.layout-index-box1.clearfix
+                    h3.title 学海泛舟
+                    div.float-l.videobox#video-ctrl
+                        img(src='../img/_delete/1.jpg')
+                        div.videoCtrl
+                            a.videoPlay#video-play(href='#')
+                    div.float-l.videoList.clearfix
+                        a.videoList-r.videoList-b(href='#') 微课程
+                        a.videoList-b(href='#') 网络课程
+                        a.videoList-r.videoList-b(href='#') 精品课程
+                        a.videoList-b(href='#') 视频课程
+                        a.videoList-r(href='#') 专家讲座
+                // 科学研究
+                div.layout-index-box2
+                    h3.title.kexueyanjiu-t 科学研究
+                    a.jinengpeixun-b.advertisement.kexueyanjiu-b(href='#')
+                        img(src='../img/_delete/e1.jpg')
+                    a.advertisement(href='#')
+                        img(src='../img/_delete/e2.jpg')
+            // ** 8 **
+            div.clearfix
+                // 常用链接
+                div.layout-index-box1
+                    h3.title 常用链接
+                    div.friendsHref
+                        select.friendsHref-select#friendsHref-select-0
+                            option 国家开放大学
+                            option(value='https://baidu.com') 百度
+                        select.friendsHref-select#friendsHref-select-1
+                            option 各省市兄弟电大
+                        select.friendsHref-select#friendsHref-select-2
+                            option 辽宁直属机关单位
+                        select.friendsHref-select#friendsHref-select-3
+                            option 高校链接
+                // 下载中心
+                div.layout-index-box2
+                    h3.title 下载中心
+                    b.download-r.download
+                        i.syin.syin-h-1
+                        a(href='#') 移动学习
+                        span APP下载中心
+                    b.download
+                        i.syin.syin-h-2
+                        a(href='#') 移动学习
+                        span APP下载中心
+        include ./modules/footer.jade

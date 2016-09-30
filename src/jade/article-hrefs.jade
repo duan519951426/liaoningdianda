@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        include ./modules/head.jade
+        script(src='../app/app.hrefs.js' data-type="webpack")
+        title 直属办学
+    body
+        include ./modules/header.jade
+        div.layout.layout-top.clearfix
+            include ./modules/layout.jade
+            div.layout-right
+                div.hrefs.clearfix
+                    a.hrefs-right(href='#') 开放教育学院
+                    a.hrefs-right(href='#') 辽宁装备学院
+                    a(href='#') 网络教育学院
+                    a.hrefs-right(href='#') 成人高职学院
+                    a.hrefs-right(href='#') 继续教育学院
+                    a(href='#') 电视学校
+                    a.hrefs-right(href='#') 农科学院
+        include ./modules/footer.jade
+

@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        include ./modules/head.jade
+        script(src='../app/app.detail.js' data-type="webpack")
+        title 文章
+    body
+        include ./modules/header.jade
+        div.layout.layout-top.clearfix
+            include ./modules/layout.jade
+            div.layout-right.detail
+                h1 辽宁广播电视大学
+                article
+                    p 辽宁广播电视大学于1979年成立，是一所由省政府主办、省教育厅主管、致力于建设辽宁终身教育体系、为全民终身学习提供支持服务的高等学校，与辽宁装备制造职业技术学院为一套机构、两块牌子。
+                    p 学校有两个校区，老校区位于沈阳市皇姑区黄河北大街50号，东临北陵公园，环境优美，交通便利。新校区坐落在沈阳市沈北新区蒲河新城，风景宜人，空气清新，占地538亩，建筑面积13万多平方米，办学功能完善。
+        include ./modules/footer.jade
+
